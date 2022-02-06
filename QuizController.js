@@ -23,7 +23,7 @@ class QuizController {
 
     async getOneQuiz(req, res) {
         try {
-            const quiz = await QuizService.getOneQuiz(req.params.id)
+            const quiz = await QuizService.getOneQuiz(req.query.id)
             return res.json(quiz)
         } catch (e) {
             res.status(500).json(e.message)
@@ -47,7 +47,7 @@ class QuizController {
 
     async deleteQuiz(req, res) {
         try {
-            const quiz = await QuizService.deleteQuiz(req.params.id)
+            const quiz = await QuizService.deleteQuiz(req.query.id)
             return res.json(quiz)
         } catch (e) {
             res.status(500).json(e.message)
