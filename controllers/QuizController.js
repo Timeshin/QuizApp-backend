@@ -1,6 +1,5 @@
-import Quiz from "./Quiz.js"
-import QuizService from "./QuizService.js"
-
+import Quiz from "../models/Quiz.js"
+import QuizService from "../services/QuizService.js"
 
 class QuizController {
     async createQuiz(req, res) {

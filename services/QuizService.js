@@ -1,5 +1,5 @@
 import fileService from "./fileService.js"
-import Quiz from "./Quiz.js"
+import Quiz from "../models/Quiz.js"
 
 class QuizService {
     async create(post, picture) {
